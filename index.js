@@ -12,11 +12,11 @@ app.use(express.json());
 
 // create router for todoroutes
 const todoRoutes = require("./routes/todos");
-//mount the todo api routes
+//mount the todo api route
 app.use("/simpler/first", todoRoutes);
 
 app.listen(PORT , ()=>{
-    console.log( `the app is started succccsefully on the port ${PORT}`);
+    console.log( `the app is started succccsefully on the port ${PORT} ispe sab thik hai dosto`);
 });
 
 // connect to data base
@@ -25,5 +25,5 @@ dbConnect();
 
 //now call to the default router
 app.get("/" , (req, res)=> {
-    res.send(`<h1> this  is the HOMEPAGE baby</h1>`)
+    res.send(`<h1> this  is the HOMEPAGE BABY BABY</h1>`)
 }) ;
